@@ -1,4 +1,5 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
+import { RESULTS_PER_PAGE } from '@/constants';
 import { searchBooksApi, fetchBookDetailsApi } from './api';
 import { SearchState, isAxiosError, SearchResults, Book } from './types';
 
@@ -9,7 +10,7 @@ const initialState: SearchState = {
   error: null,
   currentPage: 1,
   totalPages: 1,
-  resultsPerPage: 10,
+  resultsPerPage: RESULTS_PER_PAGE,
 };
 
 export const searchBooks = createAsyncThunk<

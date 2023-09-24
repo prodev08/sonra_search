@@ -1,5 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import BookSearch from '@/pages/BookSearch';
+import BookDetailPage from '@/pages/BookDetailPage';
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
         
         <main className="App-main">
           <Routes>
+            <Route path="/" element={<BookSearch/>} />
+            <Route path="/book/:bookId" element={<BookDetailPage/>} />
           </Routes>
         </main>
         
