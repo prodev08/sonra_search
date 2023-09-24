@@ -18,7 +18,7 @@ Follow these steps to set up and run the project:
 1. Clone this repository to your local machine:
 
    ```shell
-   git clone https://github.com/yourusername/your-repo-name.git
+   git clone https://github.com/prodev08/sonra_search.git
 
    ```
 
